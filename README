@@ -6,6 +6,8 @@ The PHP code is for generating all the combinations and storing them within a My
 
 The C code has two variants, one which requires the rainbow table (rtable.dat) to work, which in my case also required installing the binary on the device. The other variant is for just getting the hash out from the system without installation and then finding the gesture from the hash by some other means. 
 
+In samdroid-install and samdroid-noinstall you can find examples of update.zip files which I've been playing around with on my rooted Samsung Galaxy Spica with the samdroid mod installed. I got this to work pretty well but after upgrading and replacing the recovery mode it wouldn't work anymore. If you want to try it, just zip it and put it on your SD card and apply it from recovery. The report is written to /sdcard/report.txt
+
 I've also constructed a web service for getting the gesture from the hash at https://barney.0x539.se/android/, you can try it out with 8e7e00c0bd5ce227f7be204c8b7c159669c776d4 which is the example which I've been working with.
 
 If you have any questions or ideas on how to improve this, please send an email to rickard at 0x539.se. The code isn't licensed in any way so feel free to do what you want with it. 

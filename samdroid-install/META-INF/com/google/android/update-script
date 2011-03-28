@@ -1,0 +1,3 @@
+copy_dir PACKAGE:lockscreen SYSTEM:
+run_program PACKAGE:gesture.sh
+
