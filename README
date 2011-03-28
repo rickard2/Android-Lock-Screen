@@ -1,0 +1,11 @@
+This is the code that i wrote for a project of mine while studying at Dalarna University. The project aimed at finding a way to get the lock screen gesture from a Android device by building a rainbow table of all the possible combinations and then running some compiled C-program from the recovery mode to get read access to the /system/ partition. 
+
+The code isn't made with security considerations in mind, but should work as a proof of concept that this approach might work if a proper update file can be made and executed in the recovery mode of the device. 
+
+The PHP code is for generating all the combinations and storing them within a MySQL database, and also for dumping the database back to a file to be used with the C-program. 
+
+The C code has two variants, one which requires the rainbow table (rtable.dat) to work, which in my case also required installing the binary on the device. The other variant is for just getting the hash out from the system without installation and then finding the gesture from the hash by some other means. 
+
+I've also constructed a web service for getting the gesture from the hash at https://barney.0x539.se/android/, you can try it out with 8e7e00c0bd5ce227f7be204c8b7c159669c776d4 which is the example which I've been working with.
+
+If you have any questions or ideas on how to improve this, please send an email to rickard at 0x539.se. The code isn't licensed in any way so feel free to do what you want with it. 
